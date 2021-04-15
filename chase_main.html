@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHASE</title>
+    <link rel="stylesheet" href="./css/main_frame_style.css" />
+    <link rel="stylesheet" href="./css/chase_main_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <!-- 헤더 메뉴 바 -->
+        <nav>
+          <!-- 햄버거 매뉴(modal)-->
+          <div class="hbMenuWrap">
+            <div class="hbMenu">
+              <ul>
+                <li class="closeHb"><i class="fas fa-times"></i></li>
+                <li><hr /></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#">Language</a></li>
+                <li><a href="#">News & Stories</a></li>
+                <li><hr /></li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/check_icon_nav.png"
+                      alt="check_icon_nav.png"
+                    />
+                    <p>Checking accounts</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/saving_icon_nav.png"
+                      alt="saving_icon_nav.png"
+                    />
+                    <p>Savings</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/commercial_icon_nav.png"
+                      alt="commercial_icon_nav.png"
+                  /></a>
+                  <p>Commercial</p>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/card_icon_nav.png"
+                      alt="card_icon_nav.png"
+                    />
+                    <p>Credit Cards</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/home_icon_nav.png"
+                      alt="home_icon_nav.png"
+                    />
+                    <p>Home Loans</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/investment_icon_nav.png"
+                      alt="investment_icon_nav.png"
+                    />
+                    <p>Investment</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/event_icon_nav.png"
+                      alt="event_icon_nav.png"
+                    />
+                    <p>Events</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/credit_icon_nav.png"
+                      alt="credit_icon_nav.png"
+                    />
+                    <p>Free Credit Score</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/business_icon_nav.png"
+                      alt="business_icon_nav.png"
+                    />
+                    <p>Business</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./img/seeall_icon_nav.png"
+                      alt="seeall_icon_nav.png"
+                    />
+                    <p>See all</p></a
+                  >
+                </li>
+                <li><hr /></li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="navBar">
+            <div class="navLeft">
+              <ul>
+                <li class="hbTrigger"><i class="fas fa-bars"></i></li>
+                <li class="dropTrigger">
+                  <p>Open an account</p>
+                  <i class="fas fa-caret-down"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="logo">
+              <img src="./img/chase_logo.png" alt="chase_logo.png" />
+              <img src="./img/chase_logo_icon.png" alt="chase_logo_icon.png" />
+            </div>
+            <div class="navRight">
+              <ul>
+                <li>
+                  <a href="#"><p>ATM & branch</p></a>
+                </li>
+                <li>
+                  <a href="#"><p>Español</p></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- nav 드랍메뉴 -->
+            <div id="dropMenu">
+              <ul>
+                <li>
+                  <img
+                    src="./img/check_icon_nav.png"
+                    alt="check_icon_nav.png"
+                  />
+                  <p>Checking<br />accounts</p>
+                </li>
+                <li>
+                  <img
+                    src="./img/saving_icon_nav.png"
+                    alt="saving_icon_nav.png"
+                  />
+                  <p>Savings</p>
+                </li>
+                <li>
+                  <img
+                    src="./img/commercial_icon_nav.png"
+                    alt="commercial_icon_nav.png"
+                  />
+                  <p>Commercial</p>
+                </li>
+                <li>
+                  <img src="./img/card_icon_nav.png" alt="card_icon_nav.png" />
+                  <p>Credit Cards</p>
+                </li>
+                <li>
+                  <img src="./img/home_icon_nav.png" alt="home_icon_nav.png" />
+                  <p>Home Loans</p>
+                </li>
+                <li>
+                  <img
+                    src="./img/investment_icon_nav.png"
+                    alt="investment_icon_nav.png"
+                  />
+                  <p>Investment</p>
+                </li>
+                <li>
+                  <img
+                    src="./img/event_icon_nav.png"
+                    alt="event_icon_nav.png"
+                  />
+                  <p>Events</p>
+                </li>
+                <li>
+                  <img
+                    src="./img/credit_icon_nav.png"
+                    alt="credit_icon_nav.png"
+                  />
+                  <p>Free Credit Score</p>
+                </li>
+                <li>
+                  <img
+                    src="./img/business_icon_nav.png"
+                    alt="business_icon_nav.png"
+                  />
+                  <p>Business</p>
+                </li>
+                <li>
+                  <img
+                    src="./img/seeall_icon_nav.png"
+                    alt="seeall_icon_nav.png"
+                  />
+                  <p>See all</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- 헤더(메인베너) -->
+        <div id="mainBanner">
+          <div class="BannerContents">
+            <img src="./img/enjoy200.png" alt="enjoy200.png" />
+            <div class="textBox">
+              <p class="tit">New Chase</p>
+              <p class="tit">customers:</p>
+              <p class="sub">
+                Open a new Chase Total Checking® account and set up direct
+                deposit.
+              </p>
+              <a href="#"><p class="btn">Open an account</p></a>
+            </div>
+          </div>
+          <div class="loginBox">
+            <p class="loginBoxTit">Welcome</p>
+            <form>
+              <input
+                type="text"
+                class="username"
+                name="username"
+                placeholder="Username"
+              />
+              <input
+                type="password"
+                class="pw"
+                name="pw"
+                placeholder="Password"
+              /><br />
+              <ul>
+                <li>
+                  <input type="checkbox" class="remember" name="remember" />
+                </li>
+                <li><p>Remember me</p></li>
+                <li>
+                  <p><span>Use token ></span></p>
+                </li>
+              </ul>
+              <input type="submit" class="signIn" value="Sign in" />
+            </form>
+            <p><span>Forgot username/password? ></span></p>
+            <p><span>Not enrolled? Sign up now. ></span></p>
+          </div>
+        </div>
+
+        <!-- 헤더 파도 배경  애니메이션-->
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+      </header>
+
+      <!-- 메인베너2 -->
+      <div id="mainBanner2Wrap">
+        <div id="mainBanner2">
+          <ul>
+            <li class="slide1">
+              <!--Home Loan-->
+              <div class="slide-txtBox">
+                <h1>See how we can achieve your goals</h1>
+                <h2>Your home ownership path starts here</h2>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-home"></i>
+                      <p>Buy a home ></p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="far fa-check-square"></i>
+                      <p>Compare you loan options ></p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-calculator"></i>
+                      <p>Refinance you mortgage ></p></a
+                    >
+                  </li>
+                </ul>
+                <a href="./chase_sub1.html"
+                  ><p class="btn">Go to Home Lending</p></a
+                >
+              </div>
+            </li>
+            <li class="slide2">
+              <!--Commercial-->
+              <div class="slide-txtBox">
+                <h1>COVID-19 Guide for your Business</h1>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-store-alt"></i>
+                      <p>Startups and Scaleups</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-building"></i>
+                      <p>Midsized Businesses</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-city"></i>
+                      <p>Large Corporations</p></a
+                    >
+                  </li>
+                </ul>
+                <a href="#"><p class="btn">Explore</p></a>
+              </div>
+            </li>
+            <li class="slide3">
+              <div class="slide-txtBox">
+                <h1>Pursue your investing goals</h1>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="far fa-compass"></i>
+                      <p>Understand investment types ></p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="far fa-check-square"></i>
+                      <p>Comapre ways to invest ></p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-map-signs"></i>
+                      <p>To save or to invest? ></p></a
+                    >
+                  </li>
+                </ul>
+                <a href="#"><p class="btn">Go to Investing Basics</p></a>
+              </div>
+            </li>
+            <li class="slide4">
+              <div class="slide-txtBox">
+                <h1>See how we can achieve your goals</h1>
+                <h2>Get a head start on you future</h2>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="far fa-compass"></i>
+                      <p>Start saving today ></p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-search-dollar"></i>
+                      <p>Cash-back deals ></p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fas fa-map-signs"></i>
+                      <p>Easy ways to save ></p></a
+                    >
+                  </li>
+                </ul>
+                <a href="#"><p class="btn">Open now</p></a>
+              </div>
+            </li>
+            <li class="slide5">
+              <div class="slide-txtBox">
+                <h1>See how we can achieve your goals</h1>
+                <h2>Chase Disney® Visa® Card</h2>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="far fa-credit-card"></i>
+                      <p>Reward yourself with the Disney Visa Card</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fab fa-cc-visa"></i>
+                      <p>Check out our CHASE FREEDOM FLEX<sup>SM</sup></p></a
+                    >
+                  </li>
+                </ul>
+                <a href="#"><p class="btn">Apply for Chase Visa® Card</p></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 메인베너2 아이콘 슬라이드 -->
+        <div id="iconMenu">
+          <i class="fas fa-chevron-left"></i>
+          <i class="fas fa-chevron-right"></i>
+          <div class="iconMenuBox">
+            <ul class="slideBox">
+              <li>
+                <img src="./img/saving_icon.png" alt="saving_icon.png" />
+                <p>Savings</p>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./img/card_icon.png" alt="card_icon.png" />
+                  <p>Credit Cards</p></a
+                >
+              </li>
+              <li class="selected">
+                <img src="./img/home_icon.png" alt="home_icon.png" />
+                <p>Home Loans</p>
+              </li>
+              <li>
+                <img
+                  src="./img/commercial_icon.png"
+                  alt="commercial_icon.png"
+                />
+                <p>Commercial</p>
+              </li>
+              <li>
+                <img
+                  src="./img/investment_icon.png"
+                  alt="investment_icon.png"
+                />
+                <p>Investment</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 아이콘 슬라이드 끝-->
+      </div>
+      <!--mainBanner2Wrap end-->
+
+      <!-- 컨텐츠 컨테이터 시작 -->
+      <section id="container">
+        <!-- boxed contents  -->
+        <div id="boxedCtns">
+          <h1>Suggested for you</h1>
+          <div>
+            <ul>
+              <li>
+                <div class="imgBox imgBox1">
+                  <img src="./img/boxedCnts1.jpg" alt="boxedCnts1.jpg" />
+                </div>
+                <div class="ctnBox">
+                  <h3>Chase Freedom Flex<sup>sm</sup></h3>
+                  <p>
+                    Earn a $200 bonus with the NEW Chase Freedom Flex<sup
+                      >sm</sup
+                    >
+                    card
+                  </p>
+                  <p class="subTxt">
+                    Plus, earn 5% cash back on items purchased through chase, 3%
+                    on dining, and 1.5% on all other purchases.
+                  </p>
+                </div>
+                <button>Learn more</button>
+              </li>
+              <li>
+                <div class="imgBox imgBox2">
+                  <img src="./img/boxedCnts2.jpg" alt="boxedCnts1.jpg" />
+                </div>
+                <div class="ctnBox">
+                  <h3>Important information</h3>
+                  <p>Get the latest insights from us</p>
+                  <p class="subTxt">
+                    Hear call replays and read articles on market volatility
+                    from our strategists.
+                  </p>
+                </div>
+                <button>Open an account</button>
+              </li>
+              <li>
+                <div class="imgBox imgBox3">
+                  <img src="./img/boxedCnts3.jpg" alt="boxedCnts1.jpg" />
+                </div>
+                <div class="ctnBox">
+                  <h3>Chase Secure Banking<sup>sm</sup></h3>
+                  <p>Enjoy bonus $100 on us</p>
+                  <p class="subTxt">
+                    For new Chase checking customer when you open a Chase SEcure
+                    Banking account with qualifying activities.
+                  </p>
+                </div>
+                <button>Learn more</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CONTENTS -->
+        <div id="contents">
+          <p class="ctnsTit">
+            Financial guidance to help with navigating to new normal
+          </p>
+          <p class="ctnsSubTit">
+            Better Money Habits® has resources to help you navigate a changing
+            world.
+          </p>
+          <ul>
+            <div class="layoutTop">
+              <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+            <li>
+              <img src="./img/ctnImg1.png" alt="ctnImg1.png" />
+              <div class="ctnTxtBox">
+                <img src="./img/investment_icon.png" alt="" />
+                <p>Navigating the continuing impacts of coronavirus</p>
+              </div>
+            </li>
+            <li>
+              <img src="./img/ctnImg2.jpg" alt="ctnImg2.jpg" />
+              <div class="ctnTxtBox">
+                <img src="./img/home_icon.png" alt="" />
+                <p>
+                  Watch a conversation about managing finances with our new
+                  at-home lives
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./img/ctnImg3.jpg" alt="ctnImg1.png" />
+              <div class="ctnTxtBox">
+                <img src="./img/saving_icon.png" alt="" />
+                <p>11 money moves to make after a job loss or pay cut</p>
+              </div>
+            </li>
+            <li>
+              <img src="./img/ctnImg4.jpg" alt="ctnImg1.png" />
+              <div class="ctnTxtBox">
+                <img src="./img/card_icon.png" alt="" />
+                <p>
+                  View a discussion about income disruption and family balance
+                  in 2020.
+                </p>
+              </div>
+            </li>
+            <div class="layoutBot">
+              <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 121"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+          </ul>
+          <div class="contentsBot">
+            <p>Explore more topics and be a financial expert.</p>
+            <a href="#"><span>Show me more ></span></a>
+          </div>
+        </div>
+
+        <!-- Articles -->
+        <div id="articles">
+          <h1>News & Stories</h1>
+          <ul>
+            <li>
+              <div class="imgBox">
+                <img src="./img/acticle1.jpg" alt="acticle1.jpg" />
+              </div>
+              <div class="artTxtBox">
+                <p class="title">Customer Service</p>
+                <p class="sub">Tools to manage your account</p>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </li>
+            <li>
+              <div class="imgBox">
+                <img src="./img/article2.jpg" alt="article2.jpg" />
+              </div>
+              <div class="artTxtBox">
+                <p class="title">Retirement</p>
+                <p class="sub">Take control of your retirement</p>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </li>
+            <li>
+              <div class="imgBox">
+                <img src="./img/article3.jpg" alt="article3.jpg" />
+              </div>
+              <div class="artTxtBox">
+                <p class="title">Investing 101</p>
+                <p class="sub">
+                  Pursue your investing goals through our counselling programs
+                </p>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </li>
+            <li>
+              <div class="imgBox">
+                <img src="./img/article4.jpg" alt="acticle4.jpg" />
+              </div>
+              <div class="artTxtBox">
+                <p class="title">Going to College</p>
+                <p class="sub">Planning and paying for college</p>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </li>
+            <li>
+              <div class="imgBox">
+                <img src="./img/article5.jpg" alt="acticle5.jpg" />
+              </div>
+              <div class="artTxtBox">
+                <p class="title">Connect from everywhere</p>
+                <p class="sub">Bank wherever life takes you</p>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </li>
+            <li>
+              <div class="imgBox">
+                <img src="./img/article6.jpg" alt="article6.jpg" />
+              </div>
+              <div class="artTxtBox">
+                <p class="title">Security experts</p>
+                <p class="sub">keeping your money safe starts here</p>
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Articles 끝 -->
+      </section>
+      <!-- #container end -->
+
+      <!-- Footer -->
+      <footer>
+        <div id="ftrWrap">
+          <p class="logoBoxTit">Connect with us</p>
+          <div class="logoBox">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <p>We are here to help you manage your money today and tommorow</p>
+          <ul>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Accessible Banking</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">View Full Online Banking Site</a></li>
+            <li><a href="#">Website Feedback</a></li>
+          </ul>
+          <p>© 2021 DH.Han Choice & Co.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <!--Font Awesome-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--JQuery-->
+    <script src="./js/mainBanner2-slider.js"></script>
+    <script src="./js/scrollMain.js"></script>
+    <script src="./js/nav_dropmenu.js"></script>
+    <script src="./js/hbModal.js"></script>
+  </body>
+</html>

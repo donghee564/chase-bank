@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Keyframes 선언 */
+@keyframes hideChase {
+  /*chase 로고 스크롤시 사라짐*/
+  0% {
+    width: 145px;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes hbMenuSr {
+  /*햄버거 메뉴 오른쪽으로 슬라이드*/
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+/* Keyframes 선언 끝*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* nav 메뉴 */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  color: #fff;
+  font-size: 18px;
+  z-index: 100;
+  height: 70px;
+}
+#navBar {
+  /* width: 60%; */
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: relative;
+}
+#navBar .navLeft ul li {
+  float: left;
+  margin-right: 20px;
+  margin-top: 3px;
+}
+#navBar .navLeft p {
+  display: inline-block;
+  margin-right: 10px;
+}
+#navBar .navLeft .fa-bars {
+  font-size: 27px;
+}
+#navBar .navLeft .fa-bars:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.logo img:first-child {
+  width: 145px;
+  height: 25px;
+  transition: all 0.5s;
+}
+.hideChase {
+  animation: hideChase 0.35s ease-in forwards;
+}
+.logo img:last-child {
+  width: 30px;
+  height: 30px;
+}
+#navBar .navRight ul li {
+  float: left;
+  margin-left: 20px;
+  margin-top: 3px;
+}
+
+/* nav 햄버거 매뉴(modal) */
+.hbMenuWrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  z-index: 110;
+  display: none;
+}
+.hbMenu {
+  position: relative;
+  margin: 0 auto;
+  width: 1300px;
+  font-size: 1em;
+}
+.hbMenu ul {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+.hbMenu li {
+  position: relative;
+  width: 220px;
+  padding: 10px 15px;
+  margin-left: -100%;
+  animation: hbMenuSr ease 0.5s forwards;
+}
+.hbMenu li img {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+.hbMenu li p {
+  margin-left: 45px;
+  margin-top: 5px;
+}
+.hbMenu li i {
+  font-size: 1.5em;
+  margin: 10px 10px 40px 200px;
+}
+.hbMenu li i:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+  transition: all 0.5s;
+}
+.showHbMenu {
+  display: block;
+}
+
+/* nav 드랍 매뉴 */
+#dropMenu {
+  position: fixed;
+  top: -350px;
+  left: 0;
+  color: #fff;
+  /* background: rgba(0, 0, 0, 0.8); */
+  width: 100%;
+  z-index: 9;
+}
+#dropMenu ul {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 150px 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#dropMenu ul li {
+  display: block;
+  text-align: center;
+  opacity: 0;
+  font-size: 0.8em;
+}
+#dropMenu ul li img {
+  width: 35px;
+  height: 35px;
+}
+.showDropMenu {
+  transform: translateY(300px);
+  transition: all 0.3s ease-in;
+}
+#dropMenu ul li.showIcons {
+  opacity: 1;
+  transition: all 1s;
+}
+.dropTrigger {
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  margin-top: 50px;
+  background: #012169;
+  color: #fff;
+  text-align: center;
+}
+#ftrWrap {
+  padding: 20px;
+}
+#ftrWrap .logoBox {
+  margin-top: 10px;
+}
+#ftrWrap .logoBoxTit {
+  font-size: 1.5em;
+}
+#ftrWrap .logoBox ul {
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+#ftrWrap .logoBox ul i {
+  font-size: 2em;
+}
+#ftrWrap .logoBox ul li:hover i {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+#ftrWrap p:nth-of-type(2) {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+#ftrWrap > ul {
+  margin-top: 30px;
+  width: 100%;
+}
+#ftrWrap > ul li {
+  font-size: 0.9em;
+  display: inline-block;
+  padding: 0 15px;
+}
+#ftrWrap > ul li {
+  border-right: 1px solid #fff;
+}
+#ftrWrap > ul li:last-child {
+  border: none;
+}
+#ftrWrap > ul li:hover {
+  text-decoration: underline;
+}
+#ftrWrap p:last-child {
+  margin-top: 70px;
+}
+
+/* 반응형 */
+@media (max-width: 1300px) {
+  #navBar,
+  #dropMenu ul {
+    width: 90%;
+  }
+  #dropMenu ul li p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 960px) {
+  #navBar .navLeft p,
+  #navBar .navRight p,
+  #mainBanner .loginBox {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #navBar .logo {
+    margin-left: 12%;
+  }
+  #navBar .dropTrigger {
+    display: none;
+  }
+}
