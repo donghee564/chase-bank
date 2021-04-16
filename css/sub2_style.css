@@ -9,10 +9,9 @@ header {
 }
 
 /*배경 구름*/
-#wrap {
+body {
   background: url("https://www01.wellsfargomedia.com/assets/images/css/template/bg_hero_desktop_01.jpg")
     no-repeat center top/cover fixed;
-  overflow: hidden;
 }
 #wrap .clouds1 {
   position: fixed;
@@ -20,6 +19,7 @@ header {
   left: -1146px;
   animation: ani1 110s linear infinite;
   opacity: 0.9;
+  z-index: -1;
 }
 #wrap .clouds2 {
   position: fixed;
@@ -27,6 +27,7 @@ header {
   left: 0px;
   animation: ani2 100s linear infinite;
   opacity: 0.9;
+  z-index: -1;
 }
 /*구름 애니메이션*/
 @keyframes ani1 {
@@ -464,34 +465,59 @@ header {
 
 /* sub2-content3 */
 .sub2-content3 {
-  margin-top: 50px;
+  margin-top: 80px;
   /* background: #fff; */
   z-index: 4;
 }
-.sub2-content3 .travel-wrap {
+.sub2-content3 .cards-wrap {
   width: 1200px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
-.sub2-content3 .cards {
-  padding: 30px 0;
-}
-.sub2-content3 .cards h1 {
+.sub2-content3 .cards-wrap > h1 {
   text-align: center;
   font-weight: normal;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2.5em;
   color: #434343;
 }
-.sub2-content3 .cards > ul {
-  width: 1200px;
+
+.sub2-content3 .cards-wrap > i {
+  font-size: 30px;
+  cursor: pointer;
+  color: #44464a;
+  transition: all 0.35s;
+}
+.sub2-content3 .cards-wrap > i:hover {
+  transform: scale(1.2);
+}
+.sub2-content3 .cards-wrap .next-card {
+  position: absolute;
+  top: 9px;
+  right: 250px;
+}
+.sub2-content3 .cards-wrap .prev-card {
+  position: absolute;
+  top: 9px;
+  left: 250px;
+}
+
+.sub2-content3 .cards-list {
+  width: 2400px;
   margin-top: 30px;
+}
+.sub2-content3 .cards-list .cards-section {
+  overflow: hidden;
+  width: 1200px;
+}
+.sub2-content3 .cards-list .cards-section > ul {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   transition: all 0.3s ease-in;
 }
-.sub2-content3 .cards > ul > li {
+.sub2-content3 .cards-list .cards-section > ul > li {
   background-color: #fff;
   border: 0px solid silver;
   border-radius: 5px;
@@ -501,54 +527,79 @@ header {
   transition: transform 0.35s;
   z-index: 5;
 }
-.sub2-content3 .cards > ul > li:hover {
+/* .sub2-content3 .cards-list .cards-section > ul > li:hover {
   transform: translateY(-10px);
   box-shadow: 3px 3px 5px #949597;
-}
-.sub2-content3 .cards > ul > li > h2 {
+} */
+.sub2-content3 .cards-list .cards-section > ul > li > h2 {
   font-weight: normal;
   font-size: 1.3em;
   text-align: center;
   position: relative;
 }
-.sub2-content3 .cards > ul > li > p {
+.sub2-content3 .cards-list .cards-section > ul > li > p {
   font-size: 20px;
   text-align: center;
 }
-.sub2-content3 .cards .ctn2-img-box {
+.sub2-content3 .cards-list .ctn2-img-box {
   margin-top: 20px;
   text-align: center;
+  position: relative;
 }
-.sub2-content3 .cards .ctn2-img-box > img {
+.cards-section > ul > li .img-caption {
+  width: 250px;
+  height: 158px;
+  border-radius: 5px;
+  background-color: #44464a8c;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  color: #fff;
+  transform: translateX(-50%);
+  transition: opacity 0.35s ease-in;
+  opacity: 0;
+}
+.cards-section > ul > li .img-caption:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.cards-section > ul > li .img-caption p:first-child {
+  margin-top: 50px;
+  font-size: 1.4em;
+}
+.sub2-content3 .cards-list .ctn2-img-box > img {
   width: 250px;
   margin-bottom: 10px;
   filter: drop-shadow(2px 2px 3px rgb(75, 74, 74));
 }
-.sub2-content3 .cards .ctn2-img-box span {
+.sub2-content3 .cards-list .ctn2-img-box > img:hover {
+  cursor: pointer;
+}
+.sub2-content3 .cards-list .ctn2-img-box span {
   font-size: 14px;
   color: #2876e4;
 }
-.sub2-content3 .cards .ctn2-img-box .stars img {
+.sub2-content3 .cards-list .ctn2-img-box .stars img {
   width: 25px;
   height: 25px;
   filter: drop-shadow(2px 2px 3px rgb(105, 105, 105));
 }
-.cards .ctn2-txt-box {
+.cards-list .ctn2-txt-box {
   margin: 20px auto;
   width: 60%;
 }
-.cards .ctn2-txt-box li {
+.cards-list .ctn2-txt-box li {
   font-size: 15px;
   color: #002e56;
   margin-bottom: 8px;
   font-weight: bold;
 }
-.cards .ctn2-btn-box {
+.cards-list .ctn2-btn-box {
   margin-top: 30px;
   display: flex;
   justify-content: center;
 }
-.cards .ctn2-btn-box button {
+.cards-list .ctn2-btn-box button {
   all: unset;
   cursor: pointer;
   padding: 10px 30px;
@@ -558,35 +609,40 @@ header {
   border-radius: 5px;
   transition: all 0.5s;
 }
-.cards .ctn2-btn-box button:hover {
+.cards-list .ctn2-btn-box button:hover {
   background-color: #1b52a0;
 }
-.cards .ctn2-btn-box button:last-child {
+.cards-list .ctn2-btn-box button:last-child {
   margin-left: 8px;
   background-color: #128842;
 }
-.cards .ctn2-btn-box button:last-child:hover {
+.cards-list .ctn2-btn-box button:last-child:hover {
   background-color: #0c5f2d;
 }
 
+.sub2-content3 .cards-list {
+  width: 2400px;
+  display: flex;
+}
+
 /* content3 Travle add info */
-.sub2-content3 .travel-info {
+.sub2-content3 .cards-info .info-box {
   position: absolute;
-  top: 103px;
+  top: 76px;
   left: 1400px;
   height: 543px;
   background-color: #fff;
   transition: all 0.3s ease-in;
   z-index: 8;
 }
-.sub2-content3 .travel-info .close-info {
+.sub2-content3 .info-box .close-info {
   position: absolute;
   top: 23px;
   right: 120px;
   font-size: 35px;
   color: #fff;
 }
-.sub2-content3 .travel-info h1 {
+.sub2-content3 .cards-info .info-box h1 {
   display: inline-block;
   margin-top: 20px;
   margin-left: 60px;
@@ -595,7 +651,7 @@ header {
   color: #44464a;
   position: relative;
 }
-.sub2-content3 .travel-info h1::after {
+.sub2-content3 .cards-info .info-box h1::after {
   content: "";
   width: 200%;
   height: 1px;
@@ -605,29 +661,30 @@ header {
   bottom: -5px;
   left: 0;
 }
-.sub2-content3 .travel-info ul {
+.sub2-content3 .cards-info .info-box ul {
   margin-top: 20px;
   margin-left: 100px;
   color: #0f2f5c;
 }
-.sub2-content3 .travel-info ul li {
+.sub2-content3 .cards-info .info-box ul li {
   cursor: pointer;
   margin-bottom: 25px;
   display: flex;
   align-items: center;
 }
-.sub2-content3 .travel-info ul li h2 {
+.sub2-content3 .cards-info .info-box ul li h2 {
   font-size: 1.3em;
 }
-.sub2-content3 .travel-info ul li img {
+.sub2-content3 .cards-info .info-box ul li img {
   width: 50px;
   margin-right: 20px;
 }
-.sub2-content3 .travel-info ul li .info-txtbox {
+.sub2-content3 .cards-info .info-box ul li .info-txtbox {
   width: 60%;
 }
 /* Travel item1 add info */
-.sub2-content3 .item1-info .close-info {
+.sub2-content3 .item1-info .close-info,
+.sub2-content3 .item6-info .close-info {
   color: #184d97;
 }
 
