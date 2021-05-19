@@ -1,4 +1,5 @@
 # chase-bank
+-퍼블리싱 100% <br>
 HTML, CSS, JavaScript, jQuery
 - 메인 프레임 - nav메뉴 - 스크롤 이벤트추가(스크롤 다운시 색상변경, 로고 변경), 반응형(nav 메뉴 => display:none) 
 - Chase-Bank 메인 페이지 [데모](https://donghee564.github.io/chase-bank/chase_main) 반응형
