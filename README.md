@@ -3,7 +3,7 @@
 - Benchmark : chase bank
 - chase bank 웹사이트 리뉴얼 형식으로 바꿔본 프로젝트
 - 메인 페이지 [데모](https://donghee564.github.io/chase-bank/chase_main) 반응형
-- 서브 페이지1 Home Loans [데모](https://donghee564.github.io/chase-bank/chase_sub1) 반응형4\
+- 서브 페이지1 Home Loans [데모](https://donghee564.github.io/chase-bank/chase_sub1) 반응형
 - 서브 페이지2 Credit Cards [데모](https://donghee564.github.io/chase-bank/chase_sub2)
 
 HTML, CSS, JavaScript, jQuery
