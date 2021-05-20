@@ -400,7 +400,7 @@ header .wave.wave4 {
 #boxedCtns {
   margin: 100px auto;
 }
-#boxedCtns > h1 {
+#boxedCtns > h3 {
   font-size: 2.4em;
   font-weight: normal;
   text-align: center;
@@ -517,8 +517,13 @@ header .wave.wave4 {
   margin-top: 20px;
   text-align: center;
 }
-#contents ul {
+
+.ctns-wrap {
+  position: relative;
   margin-top: 50px;
+}
+
+#contents ul {
   overflow: hidden;
   position: relative;
 }
@@ -748,6 +753,19 @@ header .wave.wave4 {
 }
 
 @media (max-width: 830px) {
+  #mainBanner .textBox .tit {
+    font-size: 2em;
+  }
+  #mainBanner .textBox .sub {
+    font-size: 0.9em;
+  }
+  #mainBanner .textBox .btn {
+    margin-top: 20px;
+    font-size: 0.8em;
+  }
+  #mainBanner2Wrap {
+    display: none;
+  }
   #container {
     width: 90%;
   }
