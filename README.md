@@ -22,3 +22,5 @@ HTML, CSS, JavaScript, jQuery
     - 커스텀 카드 - 사진 아이콘 클릭시 배경선택 하도록. 배경선택하면 section 백그라운드도 변경.
     - 카드 아이템 컨텐츠 - 아이템 클릭시 세부정보 창 우측에서 나오도록(transfom: translateX). 
     - 카드 카테고리 클릭시 타이틀 변경.
+
+- #21-05-20 - w3c validation 을통한 마크업 에러 발견 후, 고침
